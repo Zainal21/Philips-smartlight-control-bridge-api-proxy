@@ -1,1 +1,1 @@
-export const LightUrl = `http://${process.env.LIGHT_IP}/api/${process.env.LIGHT_USER}`;
+export const LightUrl = `http://${process.env.PHILIPS_LIGHT_IP}/api/${process.env.PHILIPS_LIGHT_USER}`;
