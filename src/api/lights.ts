@@ -19,7 +19,7 @@ router.get<{}, any>("/", async (req, res) => {
   }
 });
 
-router.put<{}, any>("/:light/status", async (req: Request, res: Response) => {
+router.get<{}, any>("/:light/status", async (req: Request, res: Response) => {
   try {
     let lightStateNumber: string = req.params.light;
     const responseData = await httpClient.get<{ data: string }>(
